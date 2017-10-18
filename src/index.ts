@@ -1,3 +1,4 @@
-const thing = {};
+export const helloWorld = () => "Hello World";
 
-module.exports = thing;
+export default helloWorld;
+
