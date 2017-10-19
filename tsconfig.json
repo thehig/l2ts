@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "./biuild",
+        "outDir": "./build",
         "allowJs": true,
         "target": "es5"
     },
