@@ -65,7 +65,9 @@ Specifically regarding `let` and `const` in TypeScript, [here](https://www.types
 
 ## Changelog
 
+* 0.0.3 - 19/10/17 - #hig
+  * updated token change to test [git-hook](https://stackoverflow.com/questions/7925850/how-to-automatically-push-after-committing-in-git)
 * 0.0.2 - 19/10/17 - #hig
-  * token change to test git upstream connection working correctly through VM
+  * added token change to test git upstream connection working correctly through VM
 * 0.0.1 - 19/10/17 - #hig
   * added readme initial version with some basic headings, configuration, references and changelog
