@@ -58,6 +58,15 @@ What things in TypeScript do I want to see, and see tested?
 
 Specifically regarding `let` and `const` in TypeScript, [here](https://www.typescriptlang.org/docs/handbook/variable-declarations.html)
 
+## Git VM
+
+* Inside my virtual machine I'm running Windows 10, and have not copied across my github private key.
+* The VM Host OS is running Ubuntu, has my github private key and does have the ssh-agent running.
+* I wanted local, hassle free pushes from inside my VM, so I created a `git init --bare` inside a shared folder, then from within my VM I do my pushes and pulls to `file://E:/.../Repo`.
+* I was trying to set up a post-commit hook inside the host OS that would trigger on a push from the VM, and would push to github using the ssh-agent.
+* Couldn't get it to automagically push, but I was able to clone the project in the host OS and push to github by manually adding the remote.
+* Not sure if adding hooks to the `init --bare` folder is the right way to go, and almost certain that `post-commit`is the wrong hook
+
 ## References
 
 * [TutorialsPoint](https://www.tutorialspoint.com/typescript/index.htm) TypeScript tutorial
@@ -65,9 +74,11 @@ Specifically regarding `let` and `const` in TypeScript, [here](https://www.types
 
 ## Changelog
 
-* 0.0.4 - 19/10/17 - #hig
+* 0.0.6 - 19/10/17 - @hig
   * updated token change to test [git-hook](https://stackoverflow.com/questions/7925850/how-to-automatically-push-after-committing-in-git)
-* 0.0.2 - 19/10/17 - #hig
+  * added [#git-vm](#git-vm) to explain what I was trying to do
+  * updated author tag from `#` to `@`
+* 0.0.2 - 19/10/17 - @hig
   * added token change to test git upstream connection working correctly through VM
-* 0.0.1 - 19/10/17 - #hig
+* 0.0.1 - 19/10/17 - @hig
   * added readme initial version with some basic headings, configuration, references and changelog
